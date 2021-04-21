@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/scroll.css">
     <title>intersectionObserver</title>
-    <link rel="stylesheet" href="./scroll.css">
-    <script src="./intersectionObserver-polyfill.js"></script>
+    <script src="./js/intersectionObserver-polyfill.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,9 @@
             <label for="sp-menu-open" class="sp-menu-btn">
                 <span></span>
             </label>
+
             <!-- スマートフォン用メニュー -->
+            <label for="sp-menu-open" class="sp-menu-wrapper"></label>
             <div class="sp-menu">
                 <label for="sp-menu-open">CLOSE</label>
                 <div class="sp-menu-inner">
@@ -57,8 +59,6 @@
         <section id="section4" class="section4">
             <h2 class="section-title">SECTION4</h2>
         </section>
-
-
     </main>
 
     <!-- TOPへ戻るボタン -->
@@ -67,10 +67,8 @@
     </div>
     <!-- ここまでTOPへ戻るボタン -->
 
-
-
-    <script src="./scroll.js"></script>
-    <script src="./observer.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/observer.js"></script>
 </body>
 
 </html>
