@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intersectionObserver</title>
+    <link rel="stylesheet" href="./scroll.css">
+    <script src="./intersectionObserver-polyfill.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <ul id="index-list">
+                <li><a href="#section1">sec1</a></li>
+                <li><a href="#section2">sec2</a></li>
+                <li><a href="#section3">sec3</a></li>
+                <li><a href="#section4">sec4</a></li>
+            </ul>
+
+            <!-- スマートフォン用ナビメニューボタン -->
+            <input type="checkbox" id="sp-menu-open" class="sp-menu-open">
+            <label for="sp-menu-open" class="sp-menu-btn">
+                <span></span>
+            </label>
+            <!-- スマートフォン用メニュー -->
+            <div class="sp-menu">
+                <label for="sp-menu-open">CLOSE</label>
+                <div class="sp-menu-inner">
+                    <h3>MENU</h3>
+                    <ul id="sp-menu-list">
+                        <li><a href="#section1">Section1</a></li>
+                        <li><a href="#section2">Section2</a></li>
+                        <li><a href="#section3">Section3</a></li>
+                        <li><a href="#section4">Section4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1" class="section1">
+            <h2 class="section-title">SECTION1</h2>
+        </section>
+
+        <section id="section2" class="section2">
+            <h2 class="section-title">SECTION2</h2>
+        </section>
+
+        <section id="section3" class="section3">
+            <h2 class="section-title">SECTION3</h2>
+        </section>
+
+        <section id="section4" class="section4">
+            <h2 class="section-title">SECTION4</h2>
+        </section>
+
+
+    </main>
+
+    <!-- TOPへ戻るボタン -->
+    <div class="to-top">
+        <span class="top"></span>
+    </div>
+    <!-- ここまでTOPへ戻るボタン -->
+
+
+
+    <script src="./scroll.js"></script>
+    <script src="./observer.js"></script>
+</body>
+
+</html>
