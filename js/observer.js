@@ -33,11 +33,14 @@ function callback(entries, observer) {
 
 function selectIndex(target) {
   const activeIndex = document.querySelector('#index-list li .select');
-  // const triggers = document.querySelectorAll('a[href^="#"]');
+  const subActiveIndex = document.querySelector('#sp-menu-list li .select');
 
 
   if (activeIndex !== null) {
     activeIndex.classList.remove('select');
+  }
+  if (subActiveIndex !== null) {
+    subActiveIndex.classList.remove('select');
   }
 
   // triggers.forEach((trigger) => {
@@ -46,6 +49,10 @@ function selectIndex(target) {
 
   const newActiveIndex = document.querySelector(`a[href="#${target.id}"]`);
   newActiveIndex.classList.add('select');
+
+  const subIndex = document.querySelector('.sp-menu');
+  const newSubActiveIndex = subIndex.querySelector(`a[href="#${target.id}"]`);
+  newSubActiveIndex.classList.add('select');
 }
 
 //  セクションタイトルへの処理
