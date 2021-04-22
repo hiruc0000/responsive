@@ -1,7 +1,7 @@
 (() => {
   const scrollTriggers = document.querySelectorAll('a[href^="#"]');
   let eventType = window.ontouchstart ? 'touchstart' : 'click';
-
+  const checkbox = document.querySelector('#sp-menu-open');
   // for (let i = 0; i < scrollTriggers.length; i++) {
   //   scrollTriggers[i].addEventListener(eventType, (e) => {
   //     e.preventDefault();
@@ -19,6 +19,7 @@
       const targetPosition = targetCalc(scrollTrigger, i);
 
       scrollToAction(targetPosition);
+      checkbox.checked = false;
     });
   });
 
