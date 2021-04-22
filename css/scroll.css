@@ -192,8 +192,9 @@ div.sp-menu {
   height: 100vh;
   border-left: 2px solid white;
   background: linear-gradient(to bottom right, #99a9ee, #01038f);
+  opacity: 0;
   z-index: 150;
-  transition: right 0.3s;
+  transition: right 0.3s, opacity 0.5s;
 }
 
 .sp-menu-wrapper{
@@ -247,6 +248,7 @@ div.sp-menu .sp-menu-inner > ul > li {
 /* スマートフォン用メニュー機能 */
 #sp-menu-open:checked ~ div.sp-menu {
   right: 0;
+  opacity: 1;
 }
 
 #sp-menu-open:checked ~ .sp-menu-wrapper{
