@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
     <title>Responsive</title>
-    <script src="./js/intersectionObserver-polyfill.js"></script>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/loader.css">
 </head>
 
 <body>
+    <!-- ローダー -->
+    <div class="loader">
+        <h2 class="loader__animate">NOW LOADING...</h2>
+    </div>
 
     <header>
         <nav class="container">
@@ -67,6 +71,8 @@
     </div>
     <!-- ここまでTOPへ戻るボタン -->
 
+    <script src="./js/loader.js"></script>
+    <script src="./js/intersectionObserver-polyfill.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/observer.js"></script>
 </body>
